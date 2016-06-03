@@ -1,0 +1,23 @@
+{
+  "name": "e4",
+  "version": "0.0.0",
+  "description": "A trainer for practicing chess openings.",
+  "homepage": "https://github.com/feus4177/opening-trainer",
+  "author": {
+    "name": "John Feusi",
+    "email": "feus4177@gmail.com",
+  },
+  "keywords": [
+    "chess",
+    "openings",
+    "practice",
+    "trainer"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  }
+}
