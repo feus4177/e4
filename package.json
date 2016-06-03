@@ -5,7 +5,7 @@
   "homepage": "https://github.com/feus4177/opening-trainer",
   "author": {
     "name": "John Feusi",
-    "email": "feus4177@gmail.com",
+    "email": "feus4177@gmail.com"
   },
   "keywords": [
     "chess",
@@ -19,5 +19,15 @@
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-meteor": "0.0.9",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.3",
+    "eslint-plugin-meteor": "^3.6.0",
+    "eslint-plugin-react": "^5.1.1"
   }
 }
