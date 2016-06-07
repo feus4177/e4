@@ -1,5 +1,9 @@
 {
   "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "ecmaFeatures": {
     "arrowFunctions": true,
     "blockBindings": true,
@@ -34,6 +38,14 @@
   },
 
   "rules": {
+    /**
+     * My Edits
+     */
+    "key-spacing": 0,
+    "react/jsx-closing-bracket-location": 1,
+    "react/jsx-curly-spacing": [2, "never"],
+    "one-var": ["error", "always"],
+    "max-len": [0, 80, 4],
 
     /**
      * General
@@ -115,7 +127,6 @@
     "consistent-return": 1,
     "default-case": 1,          // *If* you happen to use a switch, maybe you don't want a default
     "guard-for-in": 1,
-    "max-len": [1, 80, 4],      // Warn if over 80, tabs expand to 4 (should use spaces anyway)
     "no-alert": 1,
     "no-caller": 1,             // Should be 2, but there is some code out there... ;>
     "no-debugger": 1,
@@ -151,11 +162,6 @@
     "func-names": 0,      // Something I'm trying to eliminate, anonymous functions
     "func-style": 0,      // Flexibility ftw
     "indent": [2, 2, {"SwitchCase": 1}],
-    "key-spacing": [2, {
-      "afterColon": true,
-      "align": "value",
-      "beforeColon": false,
-    }], // 'prop': x, extra spacing allowed if lining up blocks
     "linebreak-style": [
       2,
       "unix"
@@ -168,7 +174,6 @@
     "no-spaced-func": 2,        // Nice addition!
     "no-trailing-spaces": 2,
     "no-underscore-dangle": 0,
-    "one-var": [2, "never"],
     "padded-blocks": [0, "always"],
     "quotes": [
       2, "single", "avoid-escape"
