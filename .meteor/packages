@@ -20,7 +20,8 @@ fourseven:scss
 reywood:bootstrap3-sass
 fortawesome:fontawesome
 react-meteor-data
-accounts-ui
 accounts-password
 kadira:flow-router
 static-html
+useraccounts:bootstrap
+gadicc:blaze-react-component

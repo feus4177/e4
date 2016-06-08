@@ -3,17 +3,15 @@ import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
-import AccountsUIWrapper from './AccountsUIWrapper.jsx';
-
 // App component - represents the whole app
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-container full-height">
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#"><img src="logo.png" height="100%" /></a>
+              <a href="/"><img src="/logo.png" height="100%" /></a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -23,13 +21,15 @@ class App extends Component {
               <NavItem eventKey={2} href="#">Quiz</NavItem>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#"><AccountsUIWrapper /></NavItem>
+              <NavItem eventKey={1} href="/auth">Sign In</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         {this.props.content}
-        <div className="container text-center">
-          <footer>&copy; 2016 John Feusi</footer>
+        <div className="footer">
+          <div className="container">
+            <p className="text-muted">&copy; 2016 John Feusi</p>
+          </div>
         </div>
       </div>
     );
@@ -38,7 +38,7 @@ class App extends Component {
 
 App.propTypes = {
   currentUser: PropTypes.object,
-  content: PropTypes.any,
+  content: PropTypes.element,
 };
 
 export default createContainer(() => {
