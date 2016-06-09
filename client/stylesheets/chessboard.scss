@@ -1,0 +1,141 @@
+@import 'mixins';
+@import 'variables';
+
+.cg-board-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.cg-board {
+  @include vendor-prefix(user-select, none);
+  background-size: cover;
+  height: 100%;
+  line-height: 0;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    cursor: pointer;
+  }
+}
+
+square {
+  height: 12.5%;
+  position: absolute;
+  width: 12.5%;
+
+  &[data-coord-x]::after {
+    bottom: 1px;
+    color: $color-black;
+    content: attr(data-coord-x);
+    font-size: 10px;
+    left: 1px;
+    line-height: 10px;
+    opacity: .5;
+    position: absolute;
+  }
+
+  &[data-coord-y]::before {
+    color: $color-black;
+    content: attr(data-coord-y);
+    font-size: 10px;
+    line-height: 10px;
+    opacity: .5;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+  }
+
+  &.move-dest {
+    background: radial-gradient(rgba(20, 85, 30, .5) 22%, #208530 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
+  }
+
+  &.premove-dest {
+    background: radial-gradient(rgba(20, 30, 85, 0.5) 22%, #203085 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
+  }
+
+  &.last-move {
+    background-color: $color-warning-hilite;
+  }
+
+  &.selected {
+    background-color: $color-warning-hilite;
+  }
+
+  &.check {
+    background: radial-gradient(ellipse at center, rgba(255, 0, 0, 1) 0%, rgba(231, 0, 0, 1) 25%, rgba(169, 0, 0, 0) 89%, rgba(158, 0, 0, 0) 100%);
+  }
+
+  &.current-premove {
+    background-color: $color-primary-hilite;
+  }
+}
+
+.pirouetti piece {
+  bottom: 0;
+  height: 130%;
+  left: -15%;
+  width: 130%;
+}
+
+piece {
+  background-size: cover;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  will-change: transform;
+  z-index: index($z-stack, piece);
+
+  &.dragging {
+    z-index: index($z-stack, dragging);
+
+    @media (min-width: $screen-md) {
+      cursor: move;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      height: 200%;
+      left: -22.5px;
+      top: -22.5px;
+      width: 200%;
+    }
+  }
+
+  &.ghost {
+    opacity: .3;
+  }
+}
+
+.minimal-dom piece {
+  height: 12.5%;
+  position: absolute;
+  width: 12.5%;
+}
+
+// Boards
+$e4-board-styles: flat-blue cg-blue cg-wood cg-marble;
+@each $style in $e4-board-styles {
+  .#{$style} .cg-board {
+    background-image: url('/boards/#{$style}.png');
+  }
+}
+
+// Pieces
+$sides: (w: 'white', b: 'black');
+$pieces: (K: king, Q: queen, R: rook, B: bishop, N: knight, P: pawn);
+
+@mixin piece-style($style) {
+  @each $abbv, $side in $sides {
+    @each $symbol, $piece in $pieces {
+      .#{$style} piece.#{$side}.#{$piece} {
+        background-image: url('/pieces/#{$style}/#{$abbv}#{$symbol}.svg');
+      }
+    }
+  }
+}
+
+@include piece-style(cburnett);
+@include piece-style(merida);
+@include piece-style(pirouetti);

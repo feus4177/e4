@@ -5,6 +5,7 @@ import Blaze from 'meteor/gadicc:blaze-react-component';
 
 import App from '/imports/ui/App.jsx';
 import Cover from '/imports/ui/Cover.jsx';
+import Chessboard from '/imports/ui/Chessboard.jsx';
 import Home from '/imports/pages/Home.jsx';
 import NotFound from '/imports/pages/NotFound.jsx';
 
@@ -36,6 +37,12 @@ FlowRouter.route('/', {
 FlowRouter.route('/auth', {
   action() {
     mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+  },
+});
+
+FlowRouter.route('/practice', {
+  action() {
+    mount(App, {content: <Chessboard />});
   },
 });
 

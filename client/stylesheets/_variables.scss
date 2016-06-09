@@ -1,3 +1,20 @@
 $font-family-sans-serif:  Helvetica, Arial, sans-serif;
 
 $header-footer-spacing: 70px;
+
+$z-stack: piece dragging;
+
+// Bootstrap uses !default to define their variables, so to override a variable
+// re-define it before this import statement.
+@import '{reywood:bootstrap3-sass}/assets/stylesheets/bootstrap/variables';
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-yellow-hilite: rgba(155, 199, 0, .4);
+$color-green-hilite: rgba(20, 85, 30, .4);
+$color-blue-hilite: rgba(20, 30, 85, .4);
+
+$color-primary-hilite: rgba($brand-primary, .4);
+$color-success-hilite: rgba($brand-success, .4);
+$color-warning-hilite: rgba($brand-warning, .4);

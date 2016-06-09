@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="blue.svg"
+   inkscape:export-filename="/Users/johnfeusi/git/e4/public/images/board/blue.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="405.93763"
+     inkscape:cy="266.2492"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1283"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.3622)">
+    <g
+       id="g5341"
+       inkscape:tile-cx="64"
+       inkscape:tile-cy="447.99999"
+       inkscape:tile-w="128"
+       inkscape:tile-h="127.99998"
+       inkscape:tile-x0="0"
+       inkscape:tile-y0="384">
+      <g
+         id="g4987">
+        <rect
+           style="fill:#265a88;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="rect2985"
+           width="64"
+           height="64"
+           x="0"
+           y="988.36218" />
+        <rect
+           y="988.36218"
+           x="64"
+           height="64"
+           width="64"
+           id="rect4985"
+           style="fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      </g>
+      <use
+         height="512"
+         width="512"
+         transform="matrix(-1,0,0,1,128,-63.999983)"
+         id="use5191"
+         xlink:href="#g4987"
+         y="0"
+         x="0" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5347" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(0,-127.99998)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5349" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(0,-255.99997)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5351" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(0,-383.99995)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5353" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(128,0)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5355" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(128,-127.99998)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5357" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(128,-255.99997)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5359" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(128,-383.99995)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5361" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(256,0)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5363" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(256,-127.99998)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5365" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(256,-255.99997)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5367" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(256,-383.99995)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5369" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(384,0)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5371" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(384,-127.99998)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5373" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(384,-255.99997)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5375" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#g5341"
+       xlink:href="#g5341"
+       transform="translate(384,-383.99995)"
+       fill="#0045ff"
+       stroke="#0045ff"
+       id="use5377" />
+  </g>
+</svg>

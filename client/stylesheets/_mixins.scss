@@ -1,0 +1,12 @@
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+// This means you can use bootstrap mixins but unless you import all of
+// bootstrap's partials individually, modifying a bootstrap mixin won't have
+// any affect on predefined components.
+@import '{reywood:bootstrap3-sass}/assets/stylesheets/bootstrap/mixins';
