@@ -15,7 +15,9 @@
   width: 100%;
 
   @media (min-width: $screen-md) {
-    cursor: pointer;
+    piece {
+      cursor: pointer;
+    }
   }
 }
 
@@ -47,27 +49,27 @@ square {
   }
 
   &.move-dest {
-    background: radial-gradient(rgba(20, 85, 30, .5) 22%, #208530 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
+    background: radial-gradient($color-blue 22%, transparent 0);
   }
 
   &.premove-dest {
-    background: radial-gradient(rgba(20, 30, 85, 0.5) 22%, #203085 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
+    background: radial-gradient($color-green 22%, transparent 0);
   }
 
   &.last-move {
-    background-color: $color-warning-hilite;
+    background-color: $color-blue-hilite;
   }
 
   &.selected {
-    background-color: $color-warning-hilite;
+    background-color: $color-blue-hilite;
   }
 
   &.check {
-    background: radial-gradient(ellipse at center, rgba(255, 0, 0, 1) 0%, rgba(231, 0, 0, 1) 25%, rgba(169, 0, 0, 0) 89%, rgba(158, 0, 0, 0) 100%);
+    background: $color-red-hilite;
   }
 
   &.current-premove {
-    background-color: $color-primary-hilite;
+    background-color: $color-green-hilite;
   }
 }
 
@@ -92,7 +94,7 @@ piece {
     z-index: index($z-stack, dragging);
 
     @media (min-width: $screen-md) {
-      cursor: move;
+      cursor: grab;
     }
 
     @media (max-width: $screen-sm-max) {

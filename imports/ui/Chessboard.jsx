@@ -9,7 +9,11 @@ export default class Chessboard extends Component {
       return;
     }
 
-    const ground = new Chessground(this.chessboard, {});
+    const ground = new Chessground(
+      this.chessboard,
+      {
+        premovable: {enabled: false},
+      });
     console.log(ground.getFen());
   }
 

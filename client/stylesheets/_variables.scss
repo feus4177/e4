@@ -11,10 +11,14 @@ $z-stack: piece dragging;
 // Colors
 $color-black: #000;
 $color-white: #fff;
-$color-yellow-hilite: rgba(155, 199, 0, .4);
-$color-green-hilite: rgba(20, 85, 30, .4);
-$color-blue-hilite: rgba(20, 30, 85, .4);
+$color-blue: rgb(80, 165, 246);
+$color-green: rgb(50, 183, 64);
+$color-red: rgb(250, 20, 10);
+$color-yellow: rgb(231, 246, 67);
+$color-blue-hilite: rgba($color-blue, .6);
+$color-green-hilite: rgba($color-green, .6);
+$color-red-hilite: rgba($color-red, .6);
+$color-yellow-hilite: rgba($color-yellow, .6);
 
 $color-primary-hilite: rgba($brand-primary, .4);
 $color-success-hilite: rgba($brand-success, .4);
-$color-warning-hilite: rgba($brand-warning, .4);

@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="blue.svg"
-   inkscape:export-filename="/Users/johnfeusi/git/e4/public/images/board/blue.png"
+   sodipodi:docname="flat-blue.svg"
+   inkscape:export-filename="/Users/johnfeusi/git/e4/public/boards/flat-blue.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -29,12 +29,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.90509668"
-     inkscape:cx="405.93763"
-     inkscape:cy="266.2492"
+     inkscape:cx="-6.1730409"
+     inkscape:cy="1.0841571"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1283"
+     inkscape:window-width="1280"
      inkscape:window-height="692"
      inkscape:window-x="0"
      inkscape:window-y="1"
@@ -57,18 +57,19 @@
      id="layer1"
      transform="translate(0,-540.3622)">
     <g
-       id="g5341"
+       style="fill:#0045ff;stroke:#0045ff"
+       id="use4033"
+       inkscape:tile-x0="0"
+       inkscape:tile-y0="384"
        inkscape:tile-cx="64"
        inkscape:tile-cy="447.99999"
        inkscape:tile-w="128"
-       inkscape:tile-h="127.99998"
-       inkscape:tile-x0="0"
-       inkscape:tile-y0="384">
+       inkscape:tile-h="127.99998">
       <g
-         id="g4987">
+         id="g4067">
         <rect
-           style="fill:#265a88;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           id="rect2985"
+           style="fill:#437199;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="rect4069"
            width="64"
            height="64"
            x="0"
@@ -78,160 +79,170 @@
            x="64"
            height="64"
            width="64"
-           id="rect4985"
-           style="fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+           id="rect4071"
+           style="fill:#f0f0f0;fill-opacity:1;fill-rule:nonzero;stroke:none" />
       </g>
-      <use
-         height="512"
-         width="512"
+      <g
          transform="matrix(-1,0,0,1,128,-63.999983)"
-         id="use5191"
-         xlink:href="#g4987"
-         y="0"
-         x="0" />
+         id="g4073">
+        <rect
+           style="fill:#437199;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="rect4075"
+           width="64"
+           height="64"
+           x="0"
+           y="988.36218" />
+        <rect
+           y="988.36218"
+           x="64"
+           height="64"
+           width="64"
+           id="rect4077"
+           style="fill:#f0f0f0;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      </g>
     </g>
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5347" />
+       id="use4323" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(0,-127.99998)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5349" />
+       id="use4325" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(0,-255.99997)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5351" />
+       id="use4327" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(0,-383.99995)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5353" />
+       id="use4329" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(128,0)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5355" />
+       id="use4331" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(128,-127.99998)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5357" />
+       id="use4333" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(128,-255.99997)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5359" />
+       id="use4335" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(128,-383.99995)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5361" />
+       id="use4337" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(256,0)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5363" />
+       id="use4339" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(256,-127.99998)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5365" />
+       id="use4341" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(256,-255.99997)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5367" />
+       id="use4343" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(256,-383.99995)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5369" />
+       id="use4345" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(384,0)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5371" />
+       id="use4347" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(384,-127.99998)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5373" />
+       id="use4349" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(384,-255.99997)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5375" />
+       id="use4351" />
     <use
        x="0"
        y="0"
-       inkscape:tiled-clone-of="#g5341"
-       xlink:href="#g5341"
+       inkscape:tiled-clone-of="#use4033"
+       xlink:href="#use4033"
        transform="translate(384,-383.99995)"
        fill="#0045ff"
        stroke="#0045ff"
-       id="use5377" />
+       id="use4353" />
   </g>
 </svg>
