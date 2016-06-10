@@ -46,6 +46,7 @@
     "react/jsx-curly-spacing": [2, "never"],
     "one-var": ["error", "always"],
     "max-len": [0, 80, 4],
+    "space-in-parens": [2, "never"],
 
     /**
      * General

@@ -25,3 +25,5 @@ kadira:flow-router
 static-html
 useraccounts:bootstrap
 gadicc:blaze-react-component
+kadira:blaze-layout
+useraccounts:flow-routing

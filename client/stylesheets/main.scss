@@ -10,7 +10,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  padding-top: $header-footer-spacing;
+  padding-top: $navbar-height + $header-padding;
 }
 
 .full-height {
@@ -18,19 +18,36 @@ body {
 }
 
 .app-container {
-  margin-bottom: $header-footer-spacing;
+  margin-bottom: $footer-height + $footer-padding;
 }
 
 .footer {
   background: $navbar-default-bg;
+  border: solid;
+  border-color: $navbar-default-border;
+  border-width: 1px 0 0;
   bottom: 0;
-  height: 60px;
+  height: $footer-height + 1px;
   margin-bottom: 0;
   position: absolute;
   width: 100%;
 
-  p {
+  ul {
     margin: 20px 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+    + li::before {
+      content: '\00b7';
+      padding: 0 5px;
+    }
+  }
+
+  p {
+    margin: 40px 0 0;
   }
 }
 
