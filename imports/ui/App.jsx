@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
-import { Navbar, Nav, NavItem, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import { pathFor } from '/client/routes.jsx';
 import AccountMenu from '/imports/ui/AccountMenu.jsx';

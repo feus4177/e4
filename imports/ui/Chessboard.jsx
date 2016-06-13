@@ -1,30 +1,40 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Chessground from 'chessground';
-
-import Cover from '/imports/ui/Cover.jsx';
+import { Chess } from 'chess';
 
 export default class Chessboard extends Component {
   componentDidMount() {
-    if (!this.chessboard) {
-      return;
-    }
+    this.chessground = new Chessground(this.chessboardContainer, {
+      premovable: {enabled: false},
+      movable: {
+        free: true,
+        color: this.props.side,
+      },
+      orientation: this.props.orientation,
+    });
 
-    const ground = new Chessground(
-      this.chessboard,
-      {
-        premovable: {enabled: false},
-      });
-    console.log(ground.getFen());
+    this.chess = new Chess();
+  }
+
+  componentWillReceiveProps(props) {
+    this.chessground.set({movable: {color: props.side}});
+    this.chessground.set({orientation: props.orientation});
   }
 
   render () {
     return (
-      <Cover>
         <div
-          className="chessboard flat-blue cburnett"
-          ref={(e) => this.chessboard = e} // eslint-disable-line no-return-assign
+          className="chessboard-container flat-blue cburnett"
+          ref={(e) => this.chessboardContainer = e} // eslint-disable-line no-return-assign
         />
-      </Cover>
     );
   }
+
+  // API
+
 }
+
+Chessboard.propTypes = {
+  side: PropTypes.string.isRequired,
+  orientation: PropTypes.string.isRequired,
+};

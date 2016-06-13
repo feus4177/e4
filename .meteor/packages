@@ -27,3 +27,5 @@ useraccounts:bootstrap
 gadicc:blaze-react-component
 kadira:blaze-layout
 useraccounts:flow-routing
+aldeed:simple-schema
+aldeed:collection2

@@ -19,12 +19,16 @@
   },
   "dependencies": {
     "babel-root-slash-import": "^1.0.0",
+    "byline": "^4.2.1",
+    "chess.js": "^0.10.2",
     "chessground": "^3.1.0",
     "classnames": "^2.2.5",
+    "lodash": "^4.13.1",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
     "react-bootstrap": "^0.29.4",
+    "react-debounce-input": "^2.4.0",
     "react-dom": "^15.1.0",
     "react-mounter": "^1.2.0"
   },
@@ -36,6 +40,7 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.3",
     "eslint-plugin-meteor": "^3.6.0",
-    "eslint-plugin-react": "^5.1.1"
+    "eslint-plugin-react": "^5.1.1",
+    "stream-to-mongo": "^0.1.5"
   }
 }

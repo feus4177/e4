@@ -6,16 +6,37 @@ import Blaze from 'meteor/gadicc:blaze-react-component';
 import App from '/imports/ui/App.jsx';
 import Cover from '/imports/ui/Cover.jsx';
 import Chessboard from '/imports/ui/Chessboard.jsx';
-import Account from '/imports/pages/Account.jsx';
+import NotFound from '/imports/pages/NotFound.jsx';
 import Landing from '/imports/pages/Landing.jsx';
 import Terms from '/imports/pages/Terms.jsx';
 import Contact from '/imports/pages/Contact.jsx';
-import NotFound from '/imports/pages/NotFound.jsx';
+import Account from '/imports/pages/Account.jsx';
+import Practice from '/imports/pages/Practice.jsx';
+
+FlowRouter.notFound = {
+  action() {
+    mount(App, {content: <NotFound />});
+  },
+};
 
 FlowRouter.route('/', {
   name: 'landing',
   action() {
     mount(App, {content: <Landing />});
+  },
+});
+
+FlowRouter.route('/terms', {
+  name: 'terms',
+  action() {
+    mount(App, {content: <Terms />});
+  },
+});
+
+FlowRouter.route('/contact', {
+  name: 'contact',
+  action() {
+    mount(App, {content: <Contact />});
   },
 });
 
@@ -36,7 +57,7 @@ FlowRouter.route('/account', {
 FlowRouter.route('/practice', {
   name: 'practice',
   action() {
-    mount(App, {content: <Chessboard />});
+    mount(App, {content: <Practice />});
   },
 });
 
@@ -46,26 +67,6 @@ FlowRouter.route('/quiz', {
     mount(App, {content: <Chessboard />});
   },
 });
-
-FlowRouter.route('/terms', {
-  name: 'terms',
-  action() {
-    mount(App, {content: <Terms />});
-  },
-});
-
-FlowRouter.route('/contact', {
-  name: 'contact',
-  action() {
-    mount(App, {content: <Contact />});
-  },
-});
-
-FlowRouter.notFound = {
-  action() {
-    mount(App, {content: <NotFound />});
-  },
-};
 
 const pathFor = (path, params) => {
     const query = params &&
