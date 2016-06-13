@@ -1,6 +1,12 @@
 @import 'mixins';
 @import 'variables';
 
+.chessboard-container {
+  height: 555px;
+  position: relative;
+  width: 555px;
+}
+
 .cg-board-wrap {
   height: 100%;
   width: 100%;
@@ -9,6 +15,8 @@
 .cg-board {
   @include vendor-prefix(user-select, none);
   background-size: cover;
+  border: 0;
+  border-radius: $border-radius-base;
   height: 100%;
   line-height: 0;
   position: relative;
