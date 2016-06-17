@@ -19,4 +19,19 @@ Cover.propTypes = {
   children: PropTypes.node,
 };
 
+class CoverTitle extends Component {
+  render() {
+    return (
+      <h1 className="text-center text-capitalize page-header">
+        {this.props.children}
+      </h1>
+    );
+  }
+}
+
+CoverTitle.propTypes = {
+  children: PropTypes.node,
+};
+
 export default Cover;
+export { CoverTitle };
