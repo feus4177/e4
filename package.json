@@ -30,7 +30,8 @@
     "react-bootstrap": "^0.29.4",
     "react-debounce-input": "^2.4.0",
     "react-dom": "^15.1.0",
-    "react-mounter": "^1.2.0"
+    "react-mounter": "^1.2.0",
+    "validator": "^5.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",

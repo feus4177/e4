@@ -11,6 +11,9 @@ AccountsTemplates.configure({
       resendVerificationEmail: 'Send Email Again',
       signUp: 'Sign Up',
     },
+    title: {
+      resendVerificationEmail: 'Send Another Verification Email',
+    },
   },
   redirectTimeout: 1000,
 });
