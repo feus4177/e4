@@ -1,0 +1,13 @@
+<template name="e4AtPwdForm">
+  <form id="at-pwd-form" role="form" novalidate action="#" method="POST">
+    <fieldset {{disabled}}>
+      {{#each fields}}
+        {{> atInput}}
+      {{/each}}
+      {{#if showReCaptcha}}
+        {{> atReCaptcha}}
+      {{/if}}
+      {{> atPwdFormBtn}}
+    </fieldset>
+  </form>
+</template>

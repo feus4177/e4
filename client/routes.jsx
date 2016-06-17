@@ -1,7 +1,10 @@
 import React from 'react';
+import { Meteor } from 'meteor/meteor';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 import Blaze from 'meteor/gadicc:blaze-react-component';
+import { Accounts } from 'meteor/accounts-base';
+import { AccountsTemplates } from 'meteor/useraccounts:core';
 
 import App from '/imports/components/App.jsx';
 import Cover from '/imports/components/Cover.jsx';
@@ -39,9 +42,40 @@ FlowRouter.route('/contact', {
   },
 });
 
+// Redirect after login or if they are already signed in
+Accounts.onLogin(() => { FlowRouter.go('landing'); });
 FlowRouter.route('/sign-in', {
   name: 'signIn',
+  triggersEnter: [function (context, redirect) {
+    if (Meteor.userId()) {
+      redirect('landing');
+    }
+  }],
   action() {
+    mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+  },
+});
+
+FlowRouter.route('/verify-email/:token', {
+  name: 'verifyEmail',
+  action(params) {
+    Accounts.verifyEmail(params.token, function (error) {
+      AccountsTemplates.setDisabled(false);
+      AccountsTemplates.submitCallback(error, 'verifyEmail', function () {
+        AccountsTemplates.state.form.set(
+          'result',
+          AccountsTemplates.texts.info.emailVerified
+        );
+      });
+    });
+  },
+});
+
+FlowRouter.route('/reset-password/:token', {
+  name: 'resetPassword',
+  action(params) {
+    AccountsTemplates.setState('resetPwd');
+    AccountsTemplates.paramToken = params.token;
     mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
   },
 });
@@ -67,6 +101,17 @@ FlowRouter.route('/quiz', {
   },
 });
 
+// Initialization
+if (FlowRouter && FlowRouter.initialize) {
+  // In order for enters triggers to work, AccountsTemplates must be
+  // initialized before FlowRouter
+  const originalInitialize = FlowRouter.initialize;
+  FlowRouter.initialize = function() {
+    AccountsTemplates._init();
+    originalInitialize.apply(this, arguments);
+  };
+}
+
 const pathFor = (path, params) => {
     const query = params &&
       params.query ? FlowRouter._qs.parse(params.query) : {};
@@ -78,6 +123,7 @@ const pathFor = (path, params) => {
   },
   currentRoute = (route) => {
     FlowRouter.watchPathChange();
+
     return FlowRouter.current().route.name === route ? 'active' : '';
   };
 

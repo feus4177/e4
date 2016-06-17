@@ -6,7 +6,11 @@ AccountsTemplates.configure({
   sendVerificationEmail: true,
   showForgotPasswordLink: true,
   showResendVerificationEmailLink: true,
+  texts: {
+    button: {
+      resendVerificationEmail: 'Send Email Again',
+      signUp: 'Sign Up',
+    },
+  },
+  redirectTimeout: 1000,
 });
-
-AccountsTemplates.configureRoute('verifyEmail');
-AccountsTemplates.configureRoute('resetPwd');
