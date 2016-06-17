@@ -15,6 +15,17 @@ import Contact from '/imports/pages/Contact.jsx';
 import Account from '/imports/pages/Account.jsx';
 import Practice from '/imports/pages/Practice.jsx';
 
+function ensureSigned(state) {
+  return (context, redirect) => {
+    const violatesOut = state === 'out' && Meteor.userId(),
+      violatesIn = state === 'in' && !Meteor.userId();
+
+    if (violatesOut || violatesIn) {
+      redirect('landing');
+    }
+  };
+}
+
 FlowRouter.notFound = {
   action() {
     mount(App, {content: <NotFound />});
@@ -46,11 +57,7 @@ FlowRouter.route('/contact', {
 Accounts.onLogin(() => { FlowRouter.go('landing'); });
 FlowRouter.route('/sign-in', {
   name: 'signIn',
-  triggersEnter: [function (context, redirect) {
-    if (Meteor.userId()) {
-      redirect('landing');
-    }
-  }],
+  triggersEnter: [ensureSigned('out')],
   action() {
     mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
   },
@@ -82,6 +89,7 @@ FlowRouter.route('/reset-password/:token', {
 
 FlowRouter.route('/account', {
   name: 'account',
+  triggersEnter: [ensureSigned('in')],
   action() {
     mount(App, {content: <Account />});
   },
