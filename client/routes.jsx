@@ -121,10 +121,10 @@ const pathFor = (path, params) => {
   urlFor = (path, params) => {
     return Meteor.absoluteUrl(pathFor(path, params));
   },
-  currentRoute = (route) => {
+  isActive = (route) => {
     FlowRouter.watchPathChange();
 
     return FlowRouter.current().route.name === route ? 'active' : '';
   };
 
-export {pathFor, urlFor, currentRoute};
+export {pathFor, urlFor, isActive};

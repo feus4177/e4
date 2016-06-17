@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
-import { pathFor } from '/client/routes.jsx';
+import { pathFor, isActive } from '/client/routes.jsx';
 import AccountMenu from '/imports/components/AccountMenu.jsx';
 
 // App component - represents the whole app
@@ -20,8 +20,12 @@ class App extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem href={pathFor('practice')}>Practice</NavItem>
-              <NavItem href={pathFor('quiz')}>Quiz</NavItem>
+              <NavItem href={pathFor('practice')} className={isActive('practice')}>
+                Practice
+              </NavItem>
+              <NavItem href={pathFor('quiz')} className={isActive('quiz')}>
+                Quiz
+              </NavItem>
             </Nav>
             <Nav pullRight>
               <AccountMenu user={this.props.user} />
