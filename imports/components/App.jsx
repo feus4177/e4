@@ -4,7 +4,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import { pathFor } from '/client/routes.jsx';
-import AccountMenu from '/imports/ui/AccountMenu.jsx';
+import AccountMenu from '/imports/components/AccountMenu.jsx';
 
 // App component - represents the whole app
 class App extends Component {
@@ -30,7 +30,7 @@ class App extends Component {
         </Navbar>
         {this.props.content}
         <div className="footer text-center">
-          <ul>
+          <ul className="inline-items">
             <li><a href={pathFor('terms')}>Terms</a></li>
             <li><a href={pathFor('contact')}>Contact</a></li>
             <li><a href="https://github.com/feus4177/e4/issues">Issues</a></li>

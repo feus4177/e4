@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
-import Cover from '/imports/ui/Cover.jsx';
+import Cover from '/imports/components/Cover.jsx';
 
 export default class NotFound extends Component {
   render() {

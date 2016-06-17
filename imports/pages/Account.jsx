@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Cover from '/imports/ui/Cover.jsx';
+import Cover from '/imports/components/Cover.jsx';
 
 export default class NotFound extends Component {
   render() {

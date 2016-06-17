@@ -3,9 +3,8 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 import Blaze from 'meteor/gadicc:blaze-react-component';
 
-import App from '/imports/ui/App.jsx';
-import Cover from '/imports/ui/Cover.jsx';
-import Chessboard from '/imports/ui/Chessboard.jsx';
+import App from '/imports/components/App.jsx';
+import Cover from '/imports/components/Cover.jsx';
 import NotFound from '/imports/pages/NotFound.jsx';
 import Landing from '/imports/pages/Landing.jsx';
 import Terms from '/imports/pages/Terms.jsx';
@@ -64,7 +63,7 @@ FlowRouter.route('/practice', {
 FlowRouter.route('/quiz', {
   name: 'quiz',
   action() {
-    mount(App, {content: <Chessboard />});
+    mount(App, {content: <Practice />});
   },
 });
 

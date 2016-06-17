@@ -2,8 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Row, Col, Panel, Button } from 'react-bootstrap';
 
-import Chessboard from '/imports/ui/Chessboard.jsx';
-import FilterMultiSelect from '/imports/ui/FilterMultiSelect.jsx';
+import Chessboard from '/imports/components/Chessboard.jsx';
+import FilterMultiSelect from '/imports/components/FilterMultiSelect.jsx';
 import Openings from '/imports/api/openings.js';
 
 class Practice extends Component {
