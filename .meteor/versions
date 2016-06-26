@@ -5,6 +5,7 @@ aldeed:collection2-core@1.1.1
 aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
+aldeed:template-extension@4.0.0
 allow-deny@1.0.4
 autoupdate@1.2.9
 babel-compiler@6.6.4
@@ -12,6 +13,7 @@ babel-runtime@0.1.8
 base64@1.0.8
 binary-heap@1.0.8
 blaze@2.1.7
+blaze-html-templates@1.0.4
 blaze-tools@1.0.8
 boilerplate-generator@1.0.8
 caching-compiler@1.0.4
@@ -32,6 +34,7 @@ ejson@1.0.11
 email@1.0.12
 es5-shim@4.5.10
 fastclick@1.0.11
+feus4177:bootstrap@1.14.2
 fortawesome:fontawesome@4.5.0
 fourseven:scss@3.4.3
 gadicc:blaze-react-component@1.1.1
@@ -83,7 +86,6 @@ spacebars@1.0.11
 spacebars-compiler@1.0.11
 srp@1.0.8
 standard-minifier-js@1.0.6
-static-html@1.0.7
 templating@1.1.9
 templating-tools@1.0.4
 tmeasday:check-npm-versions@0.2.0
@@ -91,8 +93,6 @@ tracker@1.0.13
 ui@1.0.11
 underscore@1.0.8
 url@1.0.9
-useraccounts:bootstrap@1.14.2
 useraccounts:core@1.14.2
-useraccounts:flow-routing@1.14.2
 webapp@1.2.8
 webapp-hashing@1.0.9
