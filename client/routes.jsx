@@ -67,13 +67,16 @@ FlowRouter.route('/verify-email/:token', {
   name: 'verifyEmail',
   action(params) {
     Accounts.verifyEmail(params.token, function (error) {
-      AccountsTemplates.setDisabled(false);
-      AccountsTemplates.submitCallback(error, 'verifyEmail', function () {
-        AccountsTemplates.state.form.set(
-          'result',
-          AccountsTemplates.texts.info.emailVerified
-        );
-      });
+      if (error) {
+        mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+        AccountsTemplates.setDisabled(false);
+        AccountsTemplates.submitCallback(error, 'verifyEmail', function () {
+          AccountsTemplates.state.form.set(
+            'result',
+            AccountsTemplates.texts.info.emailVerified
+          );
+        });
+      }
     });
   },
 });
