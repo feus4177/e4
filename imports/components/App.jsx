@@ -9,6 +9,9 @@ import AccountMenu from '/imports/components/AccountMenu.jsx';
 // App component - represents the whole app
 class App extends Component {
   render() {
+    // Add in user so all children of app will have access to it.
+    const content = React.cloneElement(this.props.content, {user: this.props.user});
+
     return (
       <div className="app-container full-height">
         <Navbar fixedTop>
@@ -32,7 +35,7 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {this.props.content}
+        {content}
         <div className="footer text-center">
           <ul className="inline-items">
             <li><a href={pathFor('terms')}>Terms</a></li>
