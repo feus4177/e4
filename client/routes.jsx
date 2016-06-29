@@ -15,6 +15,22 @@ import Contact from '/imports/pages/Contact.jsx';
 import Account from '/imports/pages/Account.jsx';
 import Practice from '/imports/pages/Practice.jsx';
 
+const signInComponent = <Cover><Blaze template="atForm" /></Cover>,
+  pathFor = (path, params) => {
+    const query = params &&
+      params.query ? FlowRouter._qs.parse(params.query) : {};
+
+    return FlowRouter.path(path, params, query);
+  },
+  urlFor = (path, params) => {
+    return Meteor.absoluteUrl(pathFor(path, params));
+  },
+  isActive = (route) => {
+    FlowRouter.watchPathChange();
+
+    return FlowRouter.current().route.name === route ? 'active' : '';
+  };
+
 function ensureSigned(state) {
   return (context, redirect) => {
     const violatesOut = state === 'out' && Meteor.userId(),
@@ -59,7 +75,7 @@ FlowRouter.route('/sign-in', {
   name: 'signIn',
   triggersEnter: [ensureSigned('out')],
   action() {
-    mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+    mount(App, {content: signInComponent});
   },
 });
 
@@ -68,7 +84,7 @@ FlowRouter.route('/verify-email/:token', {
   action(params) {
     Accounts.verifyEmail(params.token, function (error) {
       if (error) {
-        mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+        mount(App, {content: signInComponent});
         AccountsTemplates.setDisabled(false);
         AccountsTemplates.submitCallback(error, 'verifyEmail', function () {
           AccountsTemplates.state.form.set(
@@ -86,7 +102,7 @@ FlowRouter.route('/reset-password/:token', {
   action(params) {
     AccountsTemplates.setState('resetPwd');
     AccountsTemplates.paramToken = params.token;
-    mount(App, {content: <Cover><Blaze template="atForm" /></Cover>});
+    mount(App, {content: signInComponent});
   },
 });
 
@@ -122,20 +138,5 @@ if (FlowRouter && FlowRouter.initialize) {
     originalInitialize.apply(this, arguments);
   };
 }
-
-const pathFor = (path, params) => {
-    const query = params &&
-      params.query ? FlowRouter._qs.parse(params.query) : {};
-
-    return FlowRouter.path(path, params, query);
-  },
-  urlFor = (path, params) => {
-    return Meteor.absoluteUrl(pathFor(path, params));
-  },
-  isActive = (route) => {
-    FlowRouter.watchPathChange();
-
-    return FlowRouter.current().route.name === route ? 'active' : '';
-  };
 
 export {pathFor, urlFor, isActive};
