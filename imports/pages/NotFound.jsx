@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Cover, { CoverTitle } from '/imports/components/Cover.jsx';
+import { Cover, CoverTitle } from '/imports/components/Layouts.jsx';
 
 export default class NotFound extends Component {
   render() {

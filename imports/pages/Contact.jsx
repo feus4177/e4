@@ -3,7 +3,7 @@ import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 import _ from 'lodash';
 import validator from 'validator';
 
-import Cover, { CoverTitle } from '/imports/components/Cover.jsx';
+import { Cover, CoverTitle } from '/imports/components/Layouts.jsx';
 import ErrorsAlert from '/imports/components/ErrorsAlert.jsx';
 
 export default class Terms extends Component {

@@ -7,7 +7,7 @@ import { Accounts } from 'meteor/accounts-base';
 import { AccountsTemplates } from 'meteor/useraccounts:core';
 
 import App from '/imports/components/App.jsx';
-import Cover from '/imports/components/Cover.jsx';
+import { Cover } from '/imports/components/Layouts.jsx';
 import NotFound from '/imports/pages/NotFound.jsx';
 import Landing from '/imports/pages/Landing.jsx';
 import Terms from '/imports/pages/Terms.jsx';

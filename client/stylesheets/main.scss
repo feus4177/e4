@@ -44,7 +44,7 @@ body {
 
 .cover {
   margin-bottom: 50px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .inline-items {
@@ -56,4 +56,8 @@ body {
       padding: 0 5px;
     }
   }
+}
+
+.btn + .btn {
+  margin-left: 5px;
 }

@@ -1,17 +1,30 @@
 import React, { Component, PropTypes } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import cx from 'classnames/dedupe';
 
-class Cover extends Component {
+class Narrow extends Component {
   render() {
+    const classNames = cx('container', this.props.className);
     return (
-      <div className="container cover">
+      <div className={classNames}>
         <Row>
-          <Col md={6} mdOffset={3}>
+          <Col mdOffset={3} md={6}>
             {this.props.children}
           </Col>
         </Row>
       </div>
     );
+  }
+}
+
+Narrow.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
+
+class Cover extends Component {
+  render() {
+    return <Narrow className="cover">{this.props.children}</Narrow>;
   }
 }
 
@@ -33,5 +46,4 @@ CoverTitle.propTypes = {
   children: PropTypes.node,
 };
 
-export default Cover;
-export { CoverTitle };
+export { Narrow, Cover, CoverTitle };
